@@ -1,0 +1,14 @@
+#Home{
+    background-color: rgb(142, 199, 245) !important;
+}
+#booking-illustration{
+    .booking-card{
+        border-radius: 20px;
+        background-color: rgb(190, 217, 240);
+    }
+}
+.service-images{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
