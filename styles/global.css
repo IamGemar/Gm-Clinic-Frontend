@@ -82,6 +82,9 @@
     background-size: cover;
     border-radius: 10px;
 }
+#mobileMenu{
+    width: 280px;
+}
 @media(max-width:767px){
     #hero-image{
         display: none;
