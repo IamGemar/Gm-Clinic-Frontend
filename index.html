@@ -12,22 +12,53 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-3">
     <div class="container-fluid d-flex justify-content-between align-items-center">
       <a class="navbar-brand fw-bold fs-3 ms-2" href="#">GemClinic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="ms-5 collapse navbar-collapse justify-content-end me-3" id="navbarNav">
-        <ul class="navbar-nav gap-4">
+    <!-- pag desktop -->
+      <div class="d-none d-lg-flex ms-auto me-3">
+        <ul class="navbar-nav gap-4 align-items-center">
           <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
           <li class="nav-item"><a class="nav-link" href="about/">ABOUT</a></li>
           <li class="nav-item"><a class="nav-link" href="services/">SERVICES</a></li>
           <li class="nav-item"><a class="nav-link" href="profiles/">PROFILES</a></li>
           <li class="nav-item"><a class="nav-link" href="booking/">BOOKINGS</a></li>
           <li class="nav-item"><a class="nav-link" href="contacts/">CONTACTS</a></li>
-          <button class="btn btn-dark px-3">Get Started</button>
+          <li class="nav-item">
+            <a class="btn btn-dark px-3" href="booking/">Get Started</a>
+          </li>
         </ul>
       </div>
-    </div>
-  </nav>
+      <!-- pag mobile -->
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold">GemClinic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="about/">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="services/">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link" href="profiles/">PROFILES</a></li>
+            <li class="nav-item"><a class="nav-link" href="booking/">BOOKINGS</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts/">CONTACTS</a></li>
+            <li class="nav-item mt-3">
+              <a class="btn btn-dark w-100" href="booking/">Get Started</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+  </div>
+</nav>
+
 
   <section class="py-5 bg-light mb-4" id="Home">
     <div class="container">
@@ -141,47 +172,49 @@
     </div>
   </section>
   
-  <section class="py-5 bg-light mt-5 py-4" id="Services">
+  <section class="py-5 bg-light mt-5" id="Services">
     <div class="container">
-      <div class="row stack-cards">
+      <div>
         <h2 class="fw-bold display-6 text-center">Our Services</h2>
         <p class="text-muted fs-4 text-center">Trusted medical services tailored for you</p>
-        <div class="col-4 col-md-12 card py-3 card-item border-0 shadow ">
+      </div>
+      <div class="row stack-cards">
+        <div class="col-12 col-md-6 col-lg-4 card py-3 card-item border-0 shadow services-card">
           <img src="assets/icons/scissor-svgrepo-com.svg" alt="" class="ms-2 img-fluid rounded card-image-top service-icons">
           <div class="card-body">
             <h5 class="card-title">Tuli Services</h5>
             <p class="card-text fs-5 text-muted">A safe and professionally performed minor surgical procedure conducted by trained healthcare personnel using sterile medical equipment.</p>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow">
+        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow services-card">
           <img src="assets/icons/injection-inject-vaccine-svgrepo-com.svg" alt="" class="ms-2 img-fluid rounded card-image-top service-icons">
           <div class="card-body">
             <h5 class="card-title">Vaccination Services</h5>
             <p class="card-text fs-5 text-muted">Immunization services provided in a clean and controlled environment to help protect individuals and families from preventable diseases.</p>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow">
+        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow services-card">
           <img src="assets/icons/stethoscope-svgrepo-com.svg" alt="" class="ms-2 img-fluid rounded card-image-top service-icons">
           <div class="card-body">
             <h5 class="card-title">Check Up Services</h5>
             <p class="card-text fs-5 text-muted">Comprehensive medical consultations and basic health assessments to support early detection, prevention, and overall wellness.</p>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow">
+        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow services-card">
           <img src="assets/icons/baby-girl-svgrepo-com.svg" alt="" class="ms-2 img-fluid rounded card-image-top service-icons">
           <div class="card-body">
             <h5 class="card-title">Pediatric Care</h5>
             <p class="card-text fs-5 text-muted">Compassionate medical care for infants and children, focused on growth monitoring, preventive care, and child wellness.</p>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow">
+        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow services-card">
           <img src="assets/icons/dental-svgrepo-com.svg" alt="" class="ms-2 img-fluid rounded card-image-top service-icons">
           <div class="card-body">
             <h5 class="card-title">Dental Care</h5>
             <p class="card-text fs-5 text-muted">Professional dental services including routine check-ups and oral health care to help maintain healthy teeth and gums.</p>
           </div>
         </div>
-        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow">
+        <div class="card col-12 col-md-6 col-lg-4 py-3 card-item border-0 shadow services-card">
           <img src="assets/icons/stethoscope-svgrepo-com.svg" alt="" class="ms-2 rounded card-image-top service-icons">
           <div class="card-body">
             <h5 class="card-title">Check Up Services</h5>
@@ -284,7 +317,7 @@
         </div>
         <div class="col-12 col-md-6 d-flex justify-content-md-center flex-direction-row mt-3 mt-md-0 booking-buttons">
           <a href="booking/" class="btn btn-primary px-5 py-3">Book Now</a>
-          <a href="contacts/" class="btn btn-outline-primary ms-2 px-5 py-3 fw-bold">Contact Us</a>
+          <a href="contacts/" class="btn btn-outline-primary ms-0 ms-lg-2 px-5 py-3 fw-bold">Contact Us</a>
         </div>
       </div>
     </div>

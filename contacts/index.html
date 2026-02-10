@@ -12,21 +12,45 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top py-3">
     <div class="container-fluid d-flex justify-content-between align-items-center">
-      <a class="navbar-brand fw-bold fs-3 ms-5" href="#">GemClinic</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold fs-3 ms-2" href="#">GemClinic</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="ms-5 collapse navbar-collapse justify-content-end me-3" id="navbarNav">
-        <ul class="navbar-nav gap-4">
+
+      <div class="d-none d-lg-flex ms-auto me-3">
+        <ul class="navbar-nav gap-4 align-items-center">
           <li class="nav-item"><a class="nav-link active" href="../index.html">HOME</a></li>
           <li class="nav-item"><a class="nav-link" href="../about/">ABOUT</a></li>
           <li class="nav-item"><a class="nav-link" href="../services/">SERVICES</a></li>
           <li class="nav-item"><a class="nav-link" href="../profiles/">PROFILES</a></li>
           <li class="nav-item"><a class="nav-link" href="../booking/">BOOKINGS</a></li>
           <li class="nav-item"><a class="nav-link" href="../contacts/">CONTACTS</a></li>
-          <button class="btn btn-dark px-3">Get Started</button>
+          <li class="nav-item">
+              <a class="btn btn-dark w-100" href="../booking/">Get Started</a>
+          </li>
         </ul>
       </div>
+
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold">GemClinic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item"><a class="nav-link active" href="../index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="../about/">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="../services/">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link" href="../profiles/">PROFILES</a></li>
+            <li class="nav-item"><a class="nav-link" href="../booking/">BOOKINGS</a></li>
+            <li class="nav-item"><a class="nav-link" href="../contacts/">CONTACTS</a></li>
+            <li class="nav-item mt-3">
+              <a class="btn btn-dark w-100" href="../booking/">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
     </div>
   </nav>
 
